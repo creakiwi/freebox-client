@@ -1,0 +1,28 @@
+{
+    "name": "creakiwi/freebox-client",
+    "description": "Freebox API client",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Creakiwi\\Freebox\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexandre André",
+            "email": "alexandre@creakiwi.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^6.3",
+        "symfony/http-client": "^6.3",
+        "symfony/serializer": "^6.3",
+        "symfony/property-access": "^6.3",
+        "symfony/dotenv": "^6.3"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "symfony/var-dumper": "^6.3"
+    }
+}

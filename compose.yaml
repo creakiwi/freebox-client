@@ -1,0 +1,14 @@
+services:
+    php:
+        container_name: ${PROJECT_ORGANIZATION}_${PROJECT_NAME}
+        env_file: .env
+        build:
+            context: .docker/php
+            args:
+                - PROJECT_ORGANIZATION
+                - PROJECT_NAME
+                - USER
+        volumes:
+            - ./:/app
+        working_dir: /app
+        user: ${USER}
