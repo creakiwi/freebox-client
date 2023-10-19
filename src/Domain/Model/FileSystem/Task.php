@@ -4,50 +4,50 @@ namespace Creakiwi\Freebox\Domain\Model\FileSystem;
 
 final class Task
 {
-    private readonly int $id;
+    private int $id;
 
-    private readonly TaskType $type;
+    private TaskType $type;
 
     private State $state;
 
-    private readonly Error $error;
+    private Error $error;
 
-    private readonly int $createdTs;
+    private int $createdTs;
 
-    private readonly int $startedTs;
+    private int $startedTs;
 
-    private readonly int $doneTs;
+    private int $doneTs;
 
-    private readonly int $duration;
+    private int $duration;
 
-    private readonly int $progress;
+    private int $progress;
 
-    private readonly int $eta;
+    private int $eta;
 
-    private readonly string $from;
+    private string $from;
 
-    private readonly string $to;
+    private string $to;
 
-    private readonly int $nfiles;
+    private int $nfiles;
 
-    private readonly int $nfilesDone;
+    private int $nfilesDone;
 
-    private readonly int $totalBytes;
+    private int $totalBytes;
 
-    private readonly int $totalBytesDone;
+    private int $totalBytesDone;
 
-    private readonly int $currBytes;
+    private int $currBytes;
 
-    private readonly int $currBytesDone;
+    private int $currBytesDone;
 
-    private readonly int $rate;
+    private int $rate;
 
     /**
      * @var string[]
      */
-    private readonly array $src;
+    private array $src;
 
-    private readonly string $dst;
+    private string $dst;
 
     public function setId(int $id): void
     {

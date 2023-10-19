@@ -2,15 +2,11 @@
 
 namespace Creakiwi\Freebox\Domain\Model;
 
-use Creakiwi\Freebox\Domain\Model\Authentication\AuthenticatedTrait;
-
 final class Language implements JsonPostInterface
 {
-    use AuthenticatedTrait;
-
     private string $lang;
 
-    private readonly array $avalaible;
+    private array $avalaible;
 
     /**
      * @param string $lang

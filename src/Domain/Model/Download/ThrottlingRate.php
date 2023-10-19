@@ -4,7 +4,27 @@ namespace Creakiwi\Freebox\Domain\Model\Download;
 
 final class ThrottlingRate
 {
-    private readonly int $rxRate;
+    private int $rxRate;
 
-    private readonly int $txRate;
+    private int $txRate;
+
+    public function setRxRate(int $rxRate): void
+    {
+        $this->rxRate = $rxRate;
+    }
+
+    public function getRxRate(): int
+    {
+        return $this->rxRate;
+    }
+
+    public function setTxRate(int $txRate): void
+    {
+        $this->txRate = $txRate;
+    }
+
+    public function getTxRate(): int
+    {
+        return $this->txRate;
+    }
 }

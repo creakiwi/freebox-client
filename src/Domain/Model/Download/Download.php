@@ -6,41 +6,41 @@ use Creakiwi\Freebox\Domain\Model\JsonPostInterface;
 
 final class Download implements JsonPostInterface
 {
-    private readonly int $id;
+    private int $id;
 
-    private readonly DownloadType $type;
+    private DownloadType $type;
 
-    private readonly string $name;
+    private string $name;
 
     private DownloadStatus $status;
 
-    private readonly int $size;
+    private int $size;
 
     private int $queuePos;
 
     private DownloadPriority $ioPriority;
 
-    private readonly int $txBytes;
+    private int $txBytes;
 
-    private readonly int $rxBytes;
+    private int $rxBytes;
 
-    private readonly int $txRate;
+    private int $txRate;
 
-    private readonly int $rxRate;
+    private int $rxRate;
 
-    private readonly int $txPct;
+    private int $txPct;
 
-    private readonly int $rxPct;
+    private int $rxPct;
 
-    private readonly string $error;
+    private string $error;
 
-    private readonly int $createdTs;
+    private int $createdTs;
 
-    private readonly int $eta;
+    private int $eta;
 
-    private readonly string $downloadDir;
+    private string $downloadDir;
 
-    private readonly int $stopRatio;
+    private int $stopRatio;
 
     private string $archivePassword;
 

@@ -1,6 +1,7 @@
 <?php
 
 namespace Creakiwi\Freebox\Domain\Model\Download;
+
 enum DownloadStatus: string
 {
     case STOPPED = 'stopped';

@@ -6,29 +6,29 @@ use Creakiwi\Freebox\Domain\Model\JsonPostInterface;
 
 final class File implements JsonPostInterface
 {
-    private readonly string $id;
+    private string $id;
 
-    private readonly int $taskId;
+    private int $taskId;
 
-    private readonly string $path;
+    private string $path;
 
-    private readonly string $filepath;
+    private string $filepath;
 
-    private readonly string $name;
+    private string $name;
 
-    private readonly string $mimetype;
+    private string $mimetype;
 
-    private readonly int $size;
+    private int $size;
 
-    private readonly int $rx;
+    private int $rx;
 
-    private readonly FileStatus $status;
+    private FileStatus $status;
 
-    private readonly FileError $error;
+    private FileError $error;
 
     private FilePriority $priority;
 
-    private readonly string $previewUrl;
+    private string $previewUrl;
 
     public function setId(string $id): void
     {

@@ -1,19 +1,20 @@
 <?php
 
 namespace Creakiwi\Freebox\Domain\Model\Authentication;
+
 use Creakiwi\Freebox\Domain\Model\JsonPostInterface;
 
 final class Identifiers implements JsonPostInterface
 {
-    private ?string $appToken = null;
+    private string $appToken;
 
-    private ?int $trackId = null;
+    private int $trackId;
 
     public function __construct(
-        private string $appId,
-        private string $appName,
-        private string $appVersion,
-        private string $deviceName,
+        private readonly string $appId,
+        private readonly string $appName,
+        private readonly string $appVersion,
+        private readonly string $deviceName,
     ) {
     }
 

@@ -4,7 +4,7 @@ namespace Creakiwi\Freebox\Domain\Model\Authentication;
 
 use Creakiwi\Freebox\Domain\Model\JsonPostInterface;
 
-final class Session implements IdentifiersInterface, JsonPostInterface
+final class Session implements JsonPostInterface
 {
     private string $sessionToken;
 
@@ -12,13 +12,8 @@ final class Session implements IdentifiersInterface, JsonPostInterface
 
     private array $permissions;
 
-    public function __construct(private Identifiers $identifiers, private string $challenge)
+    public function __construct(private readonly Identifiers $identifiers, private readonly string $challenge)
     {
-    }
-
-    public function getIdentifiers(): Identifiers
-    {
-        return $this->identifiers;
     }
 
     public function setSessionToken(string $sessionToken): void
@@ -29,11 +24,6 @@ final class Session implements IdentifiersInterface, JsonPostInterface
     public function getSessionToken(): string
     {
         return $this->sessionToken;
-    }
-
-    public function setChallenge(string $challenge): void
-    {
-        $this->challenge = $challenge;
     }
 
     public function getChallenge(): string

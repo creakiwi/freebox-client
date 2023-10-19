@@ -4,55 +4,55 @@ namespace Creakiwi\Freebox\Domain\Model\Download;
 
 final class Stats
 {
-    private readonly int $nbTasks;
+    private int $nbTasks;
 
-    private readonly int $nbTasksStopped;
+    private int $nbTasksStopped;
 
-    private readonly int $nbTasksChecking;
+    private int $nbTasksChecking;
 
-    private readonly int $nbTasksQueued;
+    private int $nbTasksQueued;
 
-    private readonly int $nbTasksExtracting;
+    private int $nbTasksExtracting;
 
-    private readonly int $nbTasksDone;
+    private int $nbTasksDone;
 
-    private readonly int $nbTasksRepairing;
+    private int $nbTasksRepairing;
 
-    private readonly int $nbTasksSeeding;
+    private int $nbTasksSeeding;
 
-    private readonly int $nbTasksDownloading;
+    private int $nbTasksDownloading;
 
-    private readonly int $nbTasksError;
+    private int $nbTasksError;
 
-    private readonly int $nbTasksStopping;
+    private int $nbTasksStopping;
 
-    private readonly int $nbTasksActive;
+    private int $nbTasksActive;
 
-    private readonly int $nbRss;
+    private int $nbRss;
 
-    private readonly int $nbRssItemsUnread;
+    private int $nbRssItemsUnread;
 
-    private readonly int $rxRate;
+    private int $rxRate;
 
-    private readonly int $txRate;
+    private int $txRate;
 
-    private readonly string $throttlingMode;
+    private string $throttlingMode;
 
-    private readonly bool $throttlingIsScheduled;
+    private bool $throttlingIsScheduled;
 
-    private readonly array $throttlingRate;
+    private array $throttlingRate;
 
-    private readonly array $nzbConfigStatus;
+    private array $nzbConfigStatus;
 
-    private readonly bool $connReady;
+    private bool $connReady;
 
-    private readonly int $nbPeer;
+    private int $nbPeer;
 
-    private readonly int $blocklistEntries;
+    private int $blocklistEntries;
 
-    private readonly int $blocklistHits;
+    private int $blocklistHits;
 
-    private readonly array $dhtStats;
+    private array $dhtStats;
 
     public function setNbTasks(int $nbTasks): void
     {

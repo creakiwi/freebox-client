@@ -17,7 +17,7 @@ interface FileSystemRepository extends FreeboxRepository
 
     public function removeTask(Task $task): Response;
 
-    public function ls(string $path): array;
+    public function ls(string $path = ''): array;
 
     public function fileInfoByPath(string $path): FileInfo;
 

@@ -4,31 +4,31 @@ namespace Creakiwi\Freebox\Domain\Model\FileSystem;
 
 final class FileInfo
 {
-    private readonly string $path;
+    private string $path;
 
-    private readonly string $readablePath;
+    private string $readablePath;
 
-    private readonly string $name;
+    private string $name;
 
-    private readonly string $mimetype;
+    private string $mimetype;
 
     private FileType $type;
 
-    private readonly int $size;
+    private int $size;
 
-    private readonly int $modification;
+    private int $modification;
 
-    private readonly int $index;
+    private int $index;
 
-    private readonly bool $link;
+    private bool $link;
 
-    private readonly string $target;
+    private string $target;
 
-    private readonly bool $hidden;
+    private bool $hidden;
 
-    private readonly int $folderaccount;
+    private int $folderaccount;
 
-    private readonly int $filecount;
+    private int $filecount;
 
     public function setPath(string $path): void
     {
@@ -43,7 +43,7 @@ final class FileInfo
 
     public function getReadablePath(): string
     {
-        return base64_decode($this->getPath());
+        return $this->readablePath;
     }
 
     public function setName(string $name): void
